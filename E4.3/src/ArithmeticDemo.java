@@ -2,21 +2,21 @@ import java.util.Scanner;
 
 public class ArithmeticDemo {
     public static void main(String[] args) {
-        int a, b;
+        int value1, value2;
         Scanner keyIn = new Scanner(System.in);
 
         System.out.println("please enter a first integer: ");
-        a = keyIn.nextInt();
+        value1 = keyIn.nextInt();
         System.out.println("please enter a second integer: ");
-        b = keyIn.nextInt();
+        value2 = keyIn.nextInt();
 
-        int sum = a + b;
-        int difference = a - b;
-        int product = a * b;
-        double average = (double) (a + b) / 2;
+        int sum = value1 + value2;
+        int difference = value1 - value2;
+        int product = value1 * value2;
+        double average = (double) (value1 + value2) / 2;
         int distance = Math.abs(difference);
-        int maximum = Math.max(a, b);
-        int minimum = Math.min(a, b);
+        int maximum = Math.max(value1, value2);
+        int minimum = Math.min(value1, value2);
 
         System.out.println(sum);
         System.out.println(difference);
