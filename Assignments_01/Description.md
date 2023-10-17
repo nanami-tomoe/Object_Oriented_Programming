@@ -16,6 +16,7 @@ report) [1pt]
 - Code accuracy with the various input cases [1pt]
 
 **[Example Prompt]**
+
 <img width="597" alt="스크린샷 2023-10-17 오후 2 03 11" src="https://github.com/nanami-tomoe/Object_Oriented_Programming/assets/123773613/f69bc528-0bec-4932-b665-6b72ab00878d">
 
 
