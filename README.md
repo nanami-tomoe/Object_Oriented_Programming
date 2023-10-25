@@ -5,7 +5,7 @@ This repository is for organizing object_oriented_programming.
 - 효율 = 마일/갤런
 
 # Contents
-[1.Fundermental Data types](#Fundermental-Data-types)
+[1.Fundermental Data types](#Fundermental-Data-types) <br>
 [2.Decisions](#Decisions)
 
 # Fundermental Data types
