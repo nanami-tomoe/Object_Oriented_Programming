@@ -1,69 +1,33 @@
-/**
-   A class that can calculate surface area and volume of spheres, 
-   cylinders,and cones.
-*/
-public class Geometry
-{
-   /**
-      Calculates the volume of a sphere.
-      @param r the radius of the sphere
-      @return the volume of the sphere
-   */
-   public static double sphereVolume(double r)
-   {
-      return 4.0 / 3.0 * Math.PI * Math.pow(r, 3);
-   }
+public class Geometry {
+    public static double cubeVolume(double h) {
+        return h*h*h;
+    }
 
-   /**
-      Calculates the surface area of a sphere.
-      @param r the radius of the sphere
-      @return the surface area of the sphere
-   */
-   public static double sphereSurface(double r)
-   {
-      return 4.0 * Math.PI * r * r;
-   }
+    public static double cubeSurface(double h) {
+        return 6*h*h;
+    }
 
-   /**
-      Calculates the volume of a cylinder.
-      @param r the radius of the cylinder
-      @param h the height of the cylinder
-      @return the volume of the cylinder
-   */
-   public static double cylinderVolume(double r, double h)
-   {
-      return Math.PI * r * r * h;
-   }
+    public static double sphereVolume(double r) {
+        return (double) 4/3*r*r*r*Math.PI;
+    }
 
-   /**
-      Calculates the surface area of a cylinder.
-      @param r the radius of the sphere
-      @return the surface area of the cylinder
-   */
-   public static double cylinderSurface(double r, double h)
-   {
-      return 2 * Math.PI * r * (r + h);
-   }
+    public static double sphereSurface(double r) {
+        return 4*r*r*Math.PI;
+    }
 
-   /**
-      Calculates the volume of a cone.
-      @param r the radius of the base of the cone
-      @param h the height of the cone
-      @return the volume of the cone
-   */
-   public static double coneVolume(double r, double h)
-   {
-      return 1.0 / 3.0 * Math.PI * r * r * h;
-   }
+    public static double cylinderVolume(double r, double h) {
+        return r*r*Math.PI*h;
+    }
 
-   /**
-      Calculates the surface area of a cone.
-      @param r the radius of the base of the cone
-      @param h the height of the cone
-      @return the surface area of the cone
-   */
-   public static double coneSurface(double r, double h)
-   {
-      return Math.PI * r * r + Math.PI * r * Math.sqrt(r * r + h * h);
-   }
+    public static double cylinderSurface(double r, double h) {
+        return 2*r*r*Math.PI + 2*r*Math.PI*h;
+    }
+
+    public static double coneVolume(double r, double h) {
+        return (double) 1/3*r*r*Math.PI*h;
+    }
+
+    public static double coneSurface(double r, double h) {
+        return Math.PI*r*2 + Math.PI*r*Math.sqrt(h*h + r*r);
+    }
 }
